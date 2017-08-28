@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_752"
-               BuildableName = "PerfectLib.framework"
-               BlueprintName = "PerfectLib"
+               BlueprintIdentifier = "OBJ_1546"
+               BuildableName = "SwiftServerDemo"
+               BlueprintName = "SwiftServerDemo"
                ReferencedContainer = "container:SwiftServerDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -140,6 +140,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "OBJ_1546"
+            BuildableName = "SwiftServerDemo"
+            BlueprintName = "SwiftServerDemo"
+            ReferencedContainer = "container:SwiftServerDemo.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
