@@ -10,5 +10,9 @@ let urls = [
 let package = Package(
     name: "SwiftServerDemo",
     targets: [],
-    dependencies: urls.map { .Package(url: $0, versions: versions) }
+    dependencies: [
+        .Package(url: "https://github.com/PerfectlySoft/Perfect-HTTPServer.git", majorVersion: 2),
+        .Package(url:"https://github.com/PerfectlySoft/Perfect-MySQL.git", majorVersion: 2),
+        .Package(url: "https://github.com/SwiftORM/MySQL-StORM.git", majorVersion: 1)
+    ]
 )
