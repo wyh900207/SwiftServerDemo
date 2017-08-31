@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F49A096E755950879B0F4B5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F49A8715E82BEFB550C1BD5 /* User.swift */; };
 		8FBF40A1EEA06C10A760F5EC /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF4B162D90A74CA65F2075 /* Hello.swift */; };
 		8FBF43BC42F179F701A5E168 /* ServerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF4831A0D1997CB96401B0 /* ServerConfiguration.swift */; };
 		8FBF44A5206DA7C00609E3D8 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF47B35645630DAB72B44B /* Routes.swift */; };
@@ -1389,6 +1390,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F49A8715E82BEFB550C1BD5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8FBF4787B80740D66E49CED3 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		8FBF47B35645630DAB72B44B /* Routes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
 		8FBF4831A0D1997CB96401B0 /* ServerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConfiguration.swift; sourceTree = "<group>"; };
@@ -2401,6 +2403,7 @@
 			isa = PBXGroup;
 			children = (
 				8FBF4B162D90A74CA65F2075 /* Hello.swift */,
+				7F49A8715E82BEFB550C1BD5 /* User.swift */,
 			);
 			path = Routes;
 			sourceTree = "<group>";
@@ -4102,6 +4105,7 @@
 				8FBF4A198E3CCD20B535854B /* Config.swift in Sources */,
 				8FBF44A5206DA7C00609E3D8 /* Routes.swift in Sources */,
 				8FBF40A1EEA06C10A760F5EC /* Hello.swift in Sources */,
+				7F49A096E755950879B0F4B5 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

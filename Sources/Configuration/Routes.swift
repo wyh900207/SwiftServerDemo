@@ -6,6 +6,11 @@ import PerfectLib
 import PerfectHTTP
 import PerfectHTTPServer
 
-func makeRoutes(routes: inout Routes) {
-    routes.add(method: .get, uri: "/hello", handler: Hello.hello())
+extension Routes {
+    mutating func makeRoutes() {
+        /// Hello routes
+        helloRoutes()
+        /// User routes
+        userRoutes()
+    }
 }

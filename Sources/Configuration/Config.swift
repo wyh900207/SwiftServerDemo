@@ -18,14 +18,14 @@ struct MySQLConfig {
 }
 
 func mysqlConfig() -> MySQL? {
-    let serverConfig = ServerConfiguration()
-    let db = serverConfig.db
-    let host = serverConfig.host
-    let user = serverConfig.user
-    let password = serverConfig.password
-    let port = serverConfig.port
-
-    pwdSecret = serverConfig.secret
+//    let serverConfig = ServerConfiguration()
+//    let db = serverConfig.db
+//    let host = serverConfig.host
+//    let user = serverConfig.user
+//    let password = serverConfig.password
+//    let port = serverConfig.port
+//
+//    pwdSecret = serverConfig.secret
 
 //    let mysqlConofig = MySQLConfig(
 //            db: db,
