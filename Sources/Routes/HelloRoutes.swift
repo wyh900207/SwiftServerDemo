@@ -10,14 +10,14 @@ import PerfectHTTPServer
 /// Add all hello routes to server
 extension Routes {
     mutating func helloRoutes() {
-        add(method: .get, uri: "/hello", handler: Hello.hello())
-        add(method: .get, uri: "/user/name", handler: Hello.show())
+        add(method: .get, uri: "/hello", handler: HelloRoutes.hello())
+        add(method: .get, uri: "/user/name", handler: HelloRoutes.show())
     }
 }
 
 /// Struct `Hello`
 /// defined all routes about hello
-struct Hello {
+struct HelloRoutes {
     static func hello() -> RequestHandler {
         return {
             (request, response) in

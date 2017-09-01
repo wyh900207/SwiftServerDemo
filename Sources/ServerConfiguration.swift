@@ -10,7 +10,7 @@ struct ServerConfiguration {
     let host = "127.0.0.1"
     let user = "root"
     let password = "password"
-    let mysqlPort: UInt16 = 3306
+    let mysqlPort: UInt32 = 3306
     let httpPort: UInt16 = 80
     let secret = "homerlynnhellow"
 }
@@ -22,7 +22,7 @@ struct ServerConfiguration {
     let host = "127.0.0.1"
     let user = "root"
     let password = "password"
-    let mysqlPort: UInt16 = 3306
+    let mysqlPort: UInt32 = 3306
     let httpPort: UInt16 = 8188
     let secret = "homerlynnhellow"
 }

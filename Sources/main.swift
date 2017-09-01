@@ -1,8 +1,12 @@
 import PerfectLib
 import PerfectHTTP
 import PerfectHTTPServer
+import MySQL
+import MySQLStORM
 
 let server = HTTPServer()
+
+let mysql = MySQL()
 
 /// HTTPServer 配置
 let serverConfiguration = ServerConfiguration()

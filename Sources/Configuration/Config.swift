@@ -5,41 +5,39 @@
 import Foundation
 import PerfectLib
 import MySQL
+import MySQLStORM
 
-var pwdSecret: String!
+///
+extension MySQL {
+    public func query(sql: String) -> [[String?]]? {
+        let serverConfig = ServerConfiguration()
+        let host = serverConfig.host
+        let user = serverConfig.user
+        let password = serverConfig.password
+        let port = serverConfig.mysqlPort
+        let db = serverConfig.db
 
-/// MySQL 配置
-struct MySQLConfig {
-    var db: String
-    var host: String
-    var user: String
-    var password: String
-    var port: UInt16
-}
+        guard mysql.connect(host: host, user: user, password: password, db: db, port: port) else {
+            print("connect mysql server failed!")
+            return nil
+        }
 
-func mysqlConfig() -> MySQL? {
-//    let serverConfig = ServerConfiguration()
-//    let db = serverConfig.db
-//    let host = serverConfig.host
-//    let user = serverConfig.user
-//    let password = serverConfig.password
-//    let port = serverConfig.port
-//
-//    pwdSecret = serverConfig.secret
+        defer {
+            mysql.close()
+        }
 
-//    let mysqlConofig = MySQLConfig(
-//            db: db,
-//            host: host,
-//            user: user,
-//            password: password,
-//            port: port
-//    )
+        guard mysql.query(statement: sql) else {
+            print("查询失败!")
+            return nil
+        }
 
-    let mysql = MySQL()
-    guard mysql.connect() else {
-        print(mysql.errorMessage())
-        return nil
+        let results = mysql.storeResults()
+        var resutltArray = [[String?]]()
+
+        while let row = results?.next() {
+            resutltArray.append(row)
+        }
+
+        return resutltArray
     }
-
-    return mysql
 }
